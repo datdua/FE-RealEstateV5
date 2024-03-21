@@ -5,6 +5,10 @@ import { saveToken } from '../authentication/Auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -27,7 +31,7 @@ const Login = () => {
                 setLoading(false);
                 return;
             }
-    
+
             const response = await axios.post(
                 'http://swprealestatev2-001-site1.etempurl.com/api/account/login',
                 {
@@ -41,7 +45,7 @@ const Login = () => {
                     },
                 }
             );
-    
+
             const { accessToken, userLoginBasicInformationDto } = response.data;
             // Lưu thông tin vào localStorage
             localStorage.setItem('accessToken', accessToken);
@@ -49,7 +53,7 @@ const Login = () => {
             // Lưu token vào Auth
             saveToken(accessToken);
             console.log('Login successful. Token:', accessToken);
-    
+
             window.location.reload();
         } catch (error) {
             setLoading(false);
@@ -61,12 +65,12 @@ const Login = () => {
             }
         }
     };
-    
-    
+
+
 
     return (
         <div className="login-wrap">
-            <div className="login-html">
+            {/* <div className="login-html">
                 <input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label htmlFor="tab-1" className="tab">Đăng nhập</label>
                 <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab"></label>
                 <div className="login-form">
@@ -96,7 +100,45 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
+            </div> */}
+            <div className="form_login">
+                <div className="login">
+                    <p>Đăng Nhập</p>
+                    <div className="label">
+                        <Form.Floating className="mb-3">
+                            <Form.Control
+                                id="floatingInputCustom"
+                                type="email"
+                                placeholder="name@example.com"
+                            />
+                            <label htmlFor="floatingInputCustom">
+                                Email
+                            </label>
+                        </Form.Floating>
+                        <Form.Floating>
+                            <Form.Control
+                                id="floatingPasswordCustom"
+                                type="password"
+                                placeholder="Password"
+                            />
+                            <label htmlFor="floatingPasswordCustom">
+                                Mật khẩu
+                            </label>
+                        </Form.Floating>
+                    </div>
+
+                    <div className="btn-sign">
+                    <button type="button" class="btn btn-outline-success">Đăng nhập</button>
+                    </div>
+                    <div className="Load_create">
+                        <p>Bạn chưa có tài khoản?</p>
+                        <Link to="/Dangki">
+                        <a className='dangki' href=''>Đăng ký</a>
+                        </Link>
+                    </div>
+                </div>
             </div>
+
 
             <ToastContainer /> {/* Container để hiển thị thông báo */}
         </div>
