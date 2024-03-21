@@ -1,0 +1,469 @@
+.estate-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* Thêm display:flex để sử dụng justify-content */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: center;
+}
+
+
+
+.investor-heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.estates-wrapper {
+
+    width: 1170px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+
+}
+
+.estate-item {
+
+    flex: 0 0 calc(33.33% - 20px);
+    /* Sử dụng 20% của container cha */
+    margin: 0 10px 20px 0;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(255, 255, 255)
+}
+
+.main-title1 {
+    background-color: #f7f7f7;
+    width: 1420px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    background-color: #f7f7f7;
+    width: 1420px;
+    margin-bottom: 10px;
+}
+
+.estate-info {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    width: 470;
+    height: 390;
+}
+
+.estate-name {
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+.trangthaiban {
+
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.121);
+    border-bottom: 1px solid #90c908;
+    color: #90c908;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Canh chỉnh các ảnh ngang nhau */
+}
+
+.image-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.image-info {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.estate-image {
+    width: 100%;
+    height: 300px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* căn giữa theo chiều ngang */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* thay đổi giá trị margin-top tùy ý */
+
+}
+
+.show-more-button {
+    background-color: #90c908;
+    border-radius: 9px;
+    color: white;
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+.name-status{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.status{
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-left: 0px;
+}
+
+.status p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.thanhphoprice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-location {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 4px;
+    margin-left: 15 px;
+}
+
+.thanhpho {
+    margin-left: 7px;
+}
+
+.price {
+    margin-right: 15px;
+    color: #90c908;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.estate-name {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.4;
+}
+
+.estate-name:hover {
+    color: #3c840e;
+}
+
+.estate-discription, .logo-thanhpho {
+    margin-left: 15px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.real-title1 {
+    margin-left: 10%;
+    padding-left: 15px;
+    margin-top: 30px;
+    width: 50px;
+    border-radius: 1px;
+    color: #5EA034; 
+}
+
+svg{
+    visibility: hidden;
+}
+
+.real-title {
+    margin-left: 10%;
+    padding-left: 15px;
+    margin-top: 30px;
+    width: 5px;
+    border-radius: 1px;
+    background-color: #5EA034;
+}
+
+.text-realtitle {
+    margin-left: 20px;
+    width: 560px;
+}
+
+.textso1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.textso2 {
+    font-weight: bold;
+    color: #5EA034;
+}
+
+
+
+
+/* -----------status----------- */
+:root {
+    --positive-medium: 42, 148, 70;
+    --critical-low: 200, 16, 47;
+}
+
+.highlight.positive-medium::after {
+    background: RGBA(var(--positive-medium), 1);
+    border: 1px solid RGBA(var(--positive-medium), 1);
+    -webkit-animation: pulse_positive-medium 1s ease var(--iteration-count);
+    animation: pulse_positive-medium 1s ease var(--iteration-count);
+}
+
+@keyframes pulse_positive-medium {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px RGBA(var(--positive-medium), 1);
+        box-shadow: 0px 0px 0px 0px RGBA(var(--positive-medium), 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 0px 5px transparent;
+        box-shadow: 0px 0px 0px 5px transparent;
+    }
+}
+
+
+.status-tag.neutral-medium {
+    background: RGBA(var(--neutral-medium), 0.07);
+}
+
+.status-tag.neutral-extrahigh {
+    background: RGBA(var(--neutral-extrahigh), 0.07);
+}
+
+.status-tag.informative-medium {
+    background: RGBA(var(--informative-medium), 0.07);
+}
+
+.status-tag.interaction-low {
+    background: RGBA(var(--interaction-low), 0.07);
+}
+
+.status-tag.positive-medium {
+    background: RGBA(var(--positive-medium), 0.07);
+}
+
+.status-tag.attention-low {
+    background: RGBA(var(--attention-low), 0.07);
+}
+
+.status-tag.critical-low {
+    background: RGBA(var(--critical-low), 0.07);
+}
+
+.status-tag.auxiliar-low {
+    background: RGBA(var(--auxiliar-low), 0.07);
+}
+
+.status-tag__icon,
+.status-tag__txt {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex: 0 0 auto;
+}
+
+.status-tag__icon {
+    font-size: 12px;
+}
+
+.status-tag__icon.neutral-medium {
+    color: RGBA(var(--neutral-medium), 1);
+}
+
+.status-tag__icon.neutral-extrahigh {
+    color: RGBA(var(--neutral-extrahigh), 1);
+}
+
+.status-tag__icon.informative-medium {
+    color: RGBA(var(--informative-medium), 1);
+}
+
+.status-tag__icon.interaction-low {
+    color: RGBA(var(--interaction-low), 1);
+}
+
+.status-tag__icon.positive-medium {
+    color: RGBA(var(--positive-medium), 1);
+}
+
+.status-tag__icon.attention-low {
+    color: RGBA(var(--attention-low), 1);
+}
+
+.status-tag__icon.critical-low {
+    color: RGBA(var(--critical-low), 1);
+}
+
+.status-tag__icon.auxiliar-low {
+    color: RGBA(var(--auxiliar-low), 1);
+}
+
+.status-tag__txt {
+    font-family: Graphik, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+}
+
+.status-tag.neutral-medium .status-tag__txt {
+    color: RGBA(var(--neutral-medium), 1);
+}
+
+.status-tag.neutral-extrahigh .status-tag__txt {
+    color: RGBA(var(--neutral-extrahigh), 1);
+}
+
+.status-tag.informative-medium .status-tag__txt {
+    color: RGBA(var(--informative-medium), 1);
+}
+
+.status-tag.interaction-low .status-tag__txt {
+    color: RGBA(var(--interaction-low), 1);
+}
+
+.status-tag.positive-medium .status-tag__txt {
+    color: RGBA(var(--positive-medium), 1);
+}
+
+.status-tag.attention-low .status-tag__txt {
+    color: RGBA(var(--attention-low), 1);
+}
+
+.status-tag.critical-low .status-tag__txt {
+    color: RGBA(var(--critical-low), 1);
+}
+
+.status-tag.auxiliar-low .status-tag__txt {
+    color: RGBA(var(--auxiliar-low), 1);
+}
+
+.status-tag {
+    position: relative;
+    width: auto;
+    display: inline-flex;
+    height: 24px;
+    padding: 0 10px 0 5px;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.highlight {
+    position: relative;
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.highlight.neutral-medium::after {
+    background: RGBA(var(--neutral-medium), 1);
+    border: 1px solid RGBA(var(--neutral-medium), 1);
+    -webkit-animation: pulse_neutral-medium 1s ease var(--iteration-count);
+    animation: pulse_neutral-medium 1s ease var(--iteration-count);
+}
+
+.highlight.neutral-extrahigh::after {
+    background: RGBA(var(--neutral-extrahigh), 1);
+    border: 1px solid RGBA(var(--neutral-extrahigh), 1);
+    -webkit-animation: pulse_neutral-extrahigh 1s ease var(--iteration-count);
+    animation: pulse_neutral-extrahigh 1s ease var(--iteration-count);
+}
+
+.highlight.informative-medium::after {
+    background: RGBA(var(--informative-medium), 1);
+    border: 1px solid RGBA(var(--informative-medium), 1);
+    -webkit-animation: pulse_informative-medium 1s ease var(--iteration-count);
+    animation: pulse_informative-medium 1s ease var(--iteration-count);
+}
+
+.highlight.interaction-low::after {
+    background: RGBA(var(--interaction-low), 1);
+    border: 1px solid RGBA(var(--interaction-low), 1);
+    -webkit-animation: pulse_interaction-low 1s ease var(--iteration-count);
+    animation: pulse_interaction-low 1s ease var(--iteration-count);
+}
+
+.highlight.positive-medium::after {
+    background: RGBA(var(--positive-medium), 1);
+    border: 1px solid RGBA(var(--positive-medium), 1);
+    -webkit-animation: pulse_positive-medium 1s ease var(--iteration-count);
+    animation: pulse_positive-medium 1s ease var(--iteration-count);
+}
+
+.highlight.attention-low::after {
+    background: RGBA(var(--attention-low), 1);
+    border: 1px solid RGBA(var(--attention-low), 1);
+    -webkit-animation: pulse_attention-low 1s ease var(--iteration-count);
+    animation: pulse_attention-low 1s ease var(--iteration-count);
+}
+
+.highlight.critical-low::after {
+    background: RGBA(var(--critical-low), 1);
+    border: 1px solid RGBA(var(--critical-low), 1);
+    -webkit-animation: pulse_critical-low 1s ease var(--iteration-count);
+    animation: pulse_critical-low 1s ease var(--iteration-count);
+}
+
+.highlight.auxiliar-low::after {
+    background: RGBA(var(--auxiliar-low), 1);
+    border: 1px solid RGBA(var(--auxiliar-low), 1);
+    -webkit-animation: pulse_auxiliar-low 1s ease var(--iteration-count);
+    animation: pulse_auxiliar-low 1s ease var(--iteration-count);
+}
+
+.bac-l-stack-xs {
+    margin-left: 5px !important;
+}
+/* -----------status----------- */
