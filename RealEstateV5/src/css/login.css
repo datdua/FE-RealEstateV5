@@ -214,13 +214,6 @@ a {
 
 
 /* ---------------------------------- */
-*{
-    overflow-x:hidden;
-    overflow-y: hidden;
-}
-/* .Form-Floating {
-    max-width: 50px;
-} */
 
 .background img{
     position: absolute;
