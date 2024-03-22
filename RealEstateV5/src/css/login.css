@@ -5,10 +5,39 @@ body {
     font: 600 16px/18px 'Open Sans', sans-serif;
 }
 
+/* *,
+:after,
+:before {
+    box-sizing: border-box
+} */
+
+/* .clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+} */
+
 a {
     color: inherit;
     text-decoration: none
 }
+
+/* .login-wrap { */
+    /* width: 450px;
+    margin: auto;
+    max-width: 525px;
+    min-height: 695px;
+    position: relative; */
+    /* background: url(https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg) no-repeat center; */
+    /* box-shadow: 0 12px 15px 0 #5da034c3, 0 17px 50px 0 rgba(0, 0, 0, .19);
+    overflow-y: hidden;
+    border-radius: 15px; */
+/* } */
 
 .login-html {
     width: 100%;
@@ -267,7 +296,7 @@ a {
 }
 
 .Load_create h6{
-    margin-top: 13px;
+    margin-top: 15px;
     margin-right: 10px;
 }
 
