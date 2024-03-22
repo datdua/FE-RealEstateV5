@@ -85,12 +85,16 @@ export default function Dangki() {
         <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
         {!roleSelected && (
             <div className='rolemoi'>
-                <h2 className='chonrole'>Vui lòng chọn vai trò trước khi đăng ký</h2>
-                <div className='taorole'>
+                <h2 className='chonrole'>ĐĂNG KÝ VỚI VAI TRÒ</h2>
+                {/* <div className='taorole'>
                     <button onClick={() => handleRoleChange(3)} style={{ marginRight: '20px', padding: ' 24px', borderRadius: '10px' }}>Khách hàng</button>
                     <button onClick={() => handleRoleChange(2)} style={{ marginRight: '20px', padding: ' 24px', borderRadius: '10px' }}>Chủ đầu tư</button>
+                </div> */}
+                    <div className="d-grid gap-2 d-md-block taorole">
+                        <button onClick={() => handleRoleChange(3)} type="button" className="btn btn-outline-success">Khách hàng</button>
+                        <button onClick={() => handleRoleChange(2)} type="button" className="btn btn-outline-info">Chủ đầu tư</button>
+                    </div>
                 </div>
-            </div>
         )}
         {roleSelected && (
             <div class="login-wrap">

@@ -104,7 +104,7 @@ const Login = () => {
             </div> */}
             <div className="form_login">
                 <div className="login">
-                    <p>Đăng Nhập</p>
+                    <p>ĐĂNG NHẬP</p>
                     <div className="label">
                         <Form.Floating className="mb-3">
                             <Form.Control
@@ -129,7 +129,7 @@ const Login = () => {
                     </div>
 
                     <div className="btn-sign">
-                    <button type="button" class="btn btn-outline-success">Đăng nhập</button>
+                    <button type="button" class="btn btn-outline-success">Tiếp tục</button>
                     </div>
                     <div className="Load_create">
                         <p>Bạn chưa có tài khoản?</p>

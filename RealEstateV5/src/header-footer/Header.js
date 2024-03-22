@@ -53,7 +53,6 @@ export default function Header() {
 
                         <li class="nav-item dropdown">
                             <NavLink activeClassName="active" className="nav-link dropdown-toggle" id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' to="/tintuc">Tin tức</NavLink>
-                            {/* <a class="nav-link dropdown-toggle" href="/tintuc" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tin tức</a> */}
                             <div class="dropdown-menu">
                                 {tintuc.map((tintuc) => (
                                     <li key={tintuc.id}><Link className='text-drop' to={tintuc.link}>{tintuc.title}</Link></li>
@@ -64,7 +63,6 @@ export default function Header() {
 
                         <li class="nav-item dropdown">
                             <NavLink activeClassName="active" className="nav-link dropdown-toggle" id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' to="/duan">Dự án</NavLink>
-                            {/* <a class="nav-link dropdown-toggle" href="/duan" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dự án</a> */}
                             <div class="dropdown-menu">
                                 {duan.map((duan) => (
                                     <li key={duan.id}><Link className='text-drop' to={duan.link}>{duan.name}</Link></li>
@@ -102,9 +100,6 @@ export default function Header() {
                         </div>
                     </button>
                 </div>
-
-
-
             </div>
         </nav>
     )
