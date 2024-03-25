@@ -44,7 +44,7 @@
 
 /* Button styles */
 .payment-form button {
-    background-color: #35CB6D;
+    background-color: #8dc767;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -56,7 +56,7 @@
 
 /* Hover effect on buttons */
 .payment-form button:hover {
-    background-color: #0056b3;
+    background-color: #68b336;
 }
 
 /* QR Code container styles */

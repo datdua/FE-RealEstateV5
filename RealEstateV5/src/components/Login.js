@@ -71,7 +71,7 @@ const Login = () => {
 
     return (
         <div className="login-wrap">
-            {/* <div className="login-html">
+            <div className="login-html">
                 <input id="tab-1" type="radio" name="tab" className="sign-in" checked /><label htmlFor="tab-1" className="tab">Đăng nhập</label>
                 <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab"></label>
                 <div className="login-form">
@@ -101,7 +101,7 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             <div className="form_login">
                 <div className="login">
                     <p>ĐĂNG NHẬP</p>

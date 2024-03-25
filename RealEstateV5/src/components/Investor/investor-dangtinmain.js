@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CallApi from '../CallApi';
+import Accordion from 'react-bootstrap/Accordion';
 export default function Agencydangtinmain() {
 
 
@@ -125,13 +126,27 @@ export default function Agencydangtinmain() {
             />
             <div className='thongtindangtin'>
                 <div className='thongtindangtinbds'>
-                    <h2 style={{ fontSize: '24px', marginBottom: '20px', marginTop: '10px' }}>Thông tin chi tiết dự án bất động sản</h2>
-                    <Agencydangtinpart1 sendData={handleSendDataPart1} />
+                    <h2 style={{ fontSize: '24px', marginBottom: '20px', marginTop: '25px' }}>Thông tin chi tiết dự án bất động sản</h2>
+                    <Accordion>
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header><b>Thông tin cơ bản</b></Accordion.Header>
+                            <Accordion.Body>
+                                <Agencydangtinpart1 sendData={handleSendDataPart1} />
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
                 </div>
                 <div className='thongtindangtinhinhanh'>
-                    <h2 style={{ fontSize: '24px', marginBottom: '20px', marginTop: '10px' }}>Hình ảnh bất động sản</h2>
-                    <Agencydangtinpart2 sendData={handleSendDataPart2} />
-                    <button onClick={handleSendDataToSwagger} style={{ backgroundColor: '#35CB6D' }}>Đăng tin</button>
+                    {/* <h2 style={{ fontSize: '24px', marginBottom: '20px', marginTop: '20px' }}>Hình ảnh bất động sản</h2> */}
+                    <Accordion>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header><b>Hình ảnh bất động sản</b></Accordion.Header>
+                            <Accordion.Body>
+                                <Agencydangtinpart2 sendData={handleSendDataPart2} />
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                    <button className='bn' onClick={handleSendDataToSwagger} style={{ backgroundColor:'#8dc767',borderRadius:'5px', marginTop: '10px' }}>Đăng tin</button>
                     <ToastContainer />
 
                 </div>

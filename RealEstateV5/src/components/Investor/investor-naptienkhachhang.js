@@ -21,7 +21,7 @@ export default function CustomerNaptienkhachhang() {
     const [userLoginBasicInformationDto, setUserLoginBasicInformationDto] = useState({});
     const [amount, setAmount] = useState('');
     const [description, setDescription] = useState('');
-    const [paymentUrl, setPaymentUrl] = useState('');
+    const [ paymentUrl, setPaymentUrl] = useState('');
     const [paymentCheckInterval, setPaymentCheckInterval] = useState(null);
     const [paymentSuccess, setPaymentSuccess] = useState(false); // Thêm biến trạng thái để theo dõi thanh toán
 
@@ -158,16 +158,15 @@ export default function CustomerNaptienkhachhang() {
             />
             <div className='col-md-9 thanhtoanphi'>
                 <div className='payment-form'>
-                    <h2>Thực hiện thanh toán</h2>
+                    <h2>Tạo yêu cầu nạp tiền</h2>
                     <div className='input-container' >
-                        <label>Số tiền bạn muốn nạp để thanh toán:</label>
-                        <input  type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
+                        <input placeholder='Nhập số tiền bạn muốn nạp' type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
                     </div>
                     <button onClick={handlePayment} style={{marginBottom: '20px'}}>Thanh toán</button>
                     {paymentUrl && (
                         <div>
                             <h3 style={{ marginTop: '20px', fontSize: "24px" }}>Quét mã bên dưới để thanh toán </h3>
-                            <img src={paymentUrl} alt="QR Code" style={{ maxWidth: '100%', height: 'auto' }} />
+                            <img src={paymentUrl} alt="QR Code" style={{ width: '400px', height: 'auto' }} />
                         </div>
                     )}
                 </div>

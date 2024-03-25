@@ -122,7 +122,7 @@ export default function Agencydangtinpart1({ sendData }) {
         <div className='thongtinchitietdangtin'>
             <div className='thongtinchitietdangtindulieu'>
                 <div className='thongtinchitietdangtindulieutieude'>
-                    <span className='tieude'>Thông tin cơ bản</span>
+                    {/* <span className='tieude'>Thông tin cơ bản</span> */}
                     <input type="text" name="realestateName" value={propertyInfo.realestateName} onChange={handleInputChange} placeholder="Tên bất động sản" />
                 </div>
 

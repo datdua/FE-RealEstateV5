@@ -15,7 +15,7 @@ body {
 }
 
 .listreal {
-    margin-top: 100px;
+    /* margin-top: 100px;
     max-width: 100%;
     padding: 20px;
     background-color: #fff;
@@ -23,7 +23,8 @@ body {
     margin-bottom: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
-    margin-left: -86px;
+    margin-left: -86px; */
+    margin-top: 120px;
 }
 .listreal h1 {
     text-align: center;
@@ -42,38 +43,38 @@ body {
     font-size: 18px;
 }
 
-.table {
+/* ------------------ */
+.table_1 {
+    overflow: auto;
     width: 100%;
+}
+
+.table_1 table {
+    border: 1px solid #dededf;
+    height: 100px;
+    width: 800px;
+    table-layout: auto;
     border-collapse: collapse;
-    border: 1px solid #ddd;
-    /* Khung ngoài cùng của bảng */
+    border-spacing: 1px;
+    text-align: center;
 }
 
-.table td {
-    border: 1px solid #ddd;
-    /* Khung cho các ô dữ liệu */
-    padding: 8px;
-    /* text-align: justify; */
+.table_1 caption {
+    caption-side: top;
+    text-align: center;
 }
 
-.table th {
-    border: 1px solid #ddd;
-    /* Khung cho các ô tiêu đề */
-    background-color: #f2f2f2;
-    /* Màu nền cho tiêu đề */
-    font-weight: bold;
-    font-size: 16px;
-    /* text-align: justify; */
+.table_1 th {
+    border: 1px solid #dededf;
+    background-color: #9cc581;
+    color: #000000;
+    padding: 5px;
 }
 
-.table .titlecontent {
-    border: 1px solid #ddd;
-    padding: 8px;
-    white-space: nowrap;
+.table_1 td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
 }
-
-.table tr {
-    font-size: 16px;
-   
-    /* text-align: justify; */
-}
+/* ------------------ */
