@@ -33,7 +33,7 @@ export default function Investorthongtintaikhoan() {
                 UserMenu={UserInvestor}
             />
 
-            <div className="col-md-12 thongtintaikhoan ">
+            <div className="col-md-12" style={{paddingTop: '114px'}}>
                 {userAccount && (
                     // <div>
                     //     <h2>Thông tin thẻ của bạn:</h2>

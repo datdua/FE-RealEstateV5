@@ -114,11 +114,11 @@ function RealEstate() {
           {/* Customer Routes */}
           <Route path="/trangchu" element={<><Header /><Header2 /><TrangChu /><Footer /></>} />
           <Route path="/gioithieu" element={<><Header /><Header2 /><Customergioithieu /></>} /> {/* Đã fix xong */}
-          <Route path="/khachhang-lichsudatdon" element={<><Header /><Header2 /><Customerdondat /></>} />
-          <Route path="/khachahng-trangthacacdondat" element={<><Header /><Header2 /><CustomerLichsudatdon /></>} />
-          <Route path="/khachhang-lichsumuaban" element={<><Header /><Header2 /><CustomerLichsumuaban /></>} />
+          <Route path="/khachhang-lichsudatdon" element={<><Header /><Customerdondat /></>} />
+          <Route path="/khachahng-trangthacacdondat" element={<><Header /><CustomerLichsudatdon /></>} />
+          <Route path="/khachhang-lichsumuaban" element={<><Header /><CustomerLichsumuaban /></>} />
           <Route path="/lienhe" element={<><Header /><Header2 /><Customerlienhe /></>} /> {/* Đã fix xong */}
-          <Route path="/customerthongtintaikhoan" element={<><Header /><Header2 /><Customerthongtintaikhoan /></>} />
+          <Route path="/customerthongtintaikhoan" element={<><Header /><Customerthongtintaikhoan /></>} />
           <Route path="/thongtinchitietbatdongsan/:id" element={<><Header /><Header2 /><Customerthongtinchitiet /></>} />
 
 

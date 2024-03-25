@@ -94,8 +94,7 @@ export default function CustomerLichsumuaban() {
                 userLoginBasicInformationDto={userLoginBasicInformationDto}
                 UserMenu={UserCustomer}
             />
-            <div>
-                <h1>Lịch sử mua bán</h1>
+            <div className='table' style={{marginTop:'110px'}}>
                 <table>
                     <thead>
                         <tr>

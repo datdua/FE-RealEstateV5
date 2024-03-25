@@ -57,15 +57,15 @@ export default function CustomerLichsudatdon() {
                 UserMenu={UserCustomer}
             />
             <div>
-                <table className='table'>
+                <table className='table' style={{marginTop: '110px'}}>
                     <thead>
                         <tr>
-                            <th>Mã đơn hàng</th>
-                            <th>Tên bất động sản</th>
+                            <th>Mã đơn</th>
+                            <th>Tên BĐS</th>
                             <th>Tên khách hàng đặt chỗ</th>
-                            <th>Ngày xem bất động sản</th>
-                            <th>Giờ xem bất động sản</th>
-                            <th>Thông tin liên hệ người dẫn xem</th>
+                            <th>Ngày xem</th>
+                            <th>Giờ xem</th>
+                            <th>Thông tin liên hệ</th>
                             <th>Trạng thái</th>
                         </tr>
                     </thead>

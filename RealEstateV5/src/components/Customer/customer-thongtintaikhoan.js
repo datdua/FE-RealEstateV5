@@ -31,11 +31,11 @@ export default function Customerthongtintaikhoan() {
                 userLoginBasicInformationDto={userLoginBasicInformationDto}
                 UserMenu={UserCustomer}
             />
-            <div className="col-md-9 thongtintaikhoan">
+            <div className="col-md-9" style={{marginTop: '128px'}}>
                 {userAccount && (
                     <div>
                         <h2>Thông tin thẻ của bạn:</h2>
-                        <p><b>ID Thẻ: </b> {userAccount.id}</p>
+                        {/* <p><b>ID Thẻ: </b> {userAccount.id}</p> */}
                         <p><b>Tên Chủ Thẻ:</b> {userAccount.username}</p>
                         <p><b>Số điện thoại:</b> {userAccount.phoneNumber}</p>
                         <p><b>Email:</b> {userAccount.email}</p>
