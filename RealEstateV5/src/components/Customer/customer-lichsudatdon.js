@@ -62,7 +62,7 @@ export default function CustomerLichsudatdon() {
                         <tr>
                             <th>Mã đơn</th>
                             <th>Tên BĐS</th>
-                            <th>Tên khách hàng đặt chỗ</th>
+                            <th>Tên khách hàng</th>
                             <th>Ngày xem</th>
                             <th>Giờ xem</th>
                             <th>Thông tin liên hệ</th>
