@@ -78,18 +78,18 @@ export default function Customerdondat() {
                 userLoginBasicInformationDto={userLoginBasicInformationDto}
                 UserMenu={UserCustomer}
             />
-            <div>
+            <div style={{marginTop: '110px'}}>
                 {customerReservation.length > 0 ? (
                     customerReservation.map((reservation, index) => (
                         <div key={index} className=''>
-                            <h1>Thông tin đặt chỗ</h1>
+                            <h1 style={{fontSize: '25px'}}>THÔNG TIN ĐẶT CHỖ</h1>
                             <p><b>Mã đơn hàng</b> {reservation.id}</p>
                             <p><b>Tên bất động sản: </b> {getRealEstateNameById(reservation.realEstateId)}</p>
                             <p><b>Tên khách hàng đặt chỗ: </b> {getUsernameByCustomerId(reservation.customerId)}</p>
                             <p><b>Ngày xem bất động sản: </b> {formatDate(reservation.bookingDate)}</p>
                             <p><b>Giờ xem bất động sản</b> {reservation.bookingTime}</p>
                             <p><b>Thông tin liên hệ người dẫn xem bất động sản: </b> {reservation.agencyId !== null ? getUsernameByCustomerId(reservation.agencyId) : 'Đang Cập Nhật'}</p>
-                            <button onClick={() => cancelReservation(reservation.id, reservation)}>Hủy đặt</button>
+                            <button style={{backgroundColor: 'rgb(141, 199, 103)', borderRadius: '5px', marginTopp: '10px' }} onClick={() => cancelReservation(reservation.id, reservation)}>Hủy đặt</button>
 
                         </div>
                     ))

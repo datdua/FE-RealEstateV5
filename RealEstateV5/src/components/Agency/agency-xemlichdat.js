@@ -76,13 +76,13 @@ export default function AdminDetailBookingAgen() {
     };
 
     return (
-        <div className='outer-container1'>
-            <div className='container12'>
+        <div className='container'>
+            {/* <div className='container12'> */}
                 <AgencyMenu
                     userLoginBasicInformationDto={userLoginBasicInformationDto}
                     UserMenu={UserAgency}
                 />
-                <div className='col-md-9 '>
+                <div className='col-md-9' style={{marginTop: '118px'}}>
                     <ToastContainer position="top-right" autoClose={1000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
                     {bookReservations.length > 0 ? (
                         <table>
@@ -113,10 +113,10 @@ export default function AdminDetailBookingAgen() {
                         <p style={{ marginTop: '10px', marginLeft: '3px' }}>Không có đơn đặt chỗ nào.</p>
                     )}
                     {bookReservations.length > 0 && (
-                        <button onClick={handleCompleteClick} style={{backgroundColor: "#35CB6D"}}>Đánh dấu tất cả đã hoàn thành</button>
+                        <button onClick={handleCompleteClick} style={{backgroundColor:'#8dc767',borderRadius:'5px', marginTop:'10px'}}>Đánh dấu tất cả đã hoàn thành</button>
                     )}
                 </div>
-            </div>
+            {/* </div> */}
         </div>
     );
 }

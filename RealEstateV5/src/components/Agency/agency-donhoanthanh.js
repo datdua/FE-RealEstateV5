@@ -47,13 +47,13 @@ export default function AgencyDonhoanthanh() {
         return `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
     };
     return (
-        <div className='container12' style={{marginTop: "124px"}}>
+        <div className='container'>
             <AgencyMenu
                 userLoginBasicInformationDto={userLoginBasicInformationDto}
                 UserMenu={UserAgency}
             />
-            <div className='col-md-9 '>
-            <h1 style={{fontSize: '30px'}}>Danh Sách Đã Hoàn Thành Dẫn Đi Xem</h1>
+            <div className='col-md-9' style={{marginTop: '118px'}}>
+            <h1 style={{fontSize: '20px'}}>DANH SÁCH KHÁCH ĐÃ XEM NHÀ</h1>
             <table className='thongtindanhsach'>
                 <thead>
                     <tr>

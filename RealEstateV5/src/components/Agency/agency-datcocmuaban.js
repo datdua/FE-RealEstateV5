@@ -109,13 +109,13 @@ export default function AgencyDatcocmuaban() {
     );
 
     return (
-        <div className='outer-container1'>
-            <div className='container12'>
+        <div className='container'>
+            {/* <div className='container12'> */}
                 <AgencyMenu
                     userLoginBasicInformationDto={userLoginBasicInformationDto}
                     UserMenu={UserAgency}
                 />
-                <div className='col-md-9 '>
+                <div className='col-md-9' style={{marginTop: '118px'}}>
                     <input
                         type="text"
                         placeholder="Tìm kiếm theo tên"
@@ -161,7 +161,7 @@ export default function AgencyDatcocmuaban() {
                     )}
 
                 </div>
-            </div>
+            {/* </div> */}
         </div>
     );
 }

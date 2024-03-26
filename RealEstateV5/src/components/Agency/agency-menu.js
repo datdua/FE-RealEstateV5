@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Agencymenu({ userLoginBasicInformationDto, UserMenu, handleLogout }) {
     const navigate = useNavigate();
@@ -11,12 +12,13 @@ export default function Agencymenu({ userLoginBasicInformationDto, UserMenu, han
     }
 
     return (
-        <div className="col-md-3 account">
+        <div className="col-md-3 account" style={{ paddingBottom: '20px' }}>
             <span className='welcome'>Chào mừng, {userLoginBasicInformationDto.username}!</span>
             <ul className="menu-list-investor">
                 {UserMenu.map(menuItem => (
                     <li key={menuItem.id} className="menu-item-container">
-                        <Link className="menu-item-investor" to={menuItem.link}>{menuItem.name}</Link>
+                        {/* <Link className="menu-item-investor" to={menuItem.link}>{menuItem.name}</Link> */}
+                        <NavLink exact activeClassName="active" className="menu-item-investor" to={menuItem.link}>{menuItem.name}</NavLink>
                     </li>
                 ))}
             </ul>
