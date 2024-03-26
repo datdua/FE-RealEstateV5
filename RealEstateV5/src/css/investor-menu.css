@@ -116,7 +116,8 @@ body {
 }
 
 .sidebar a.active {
-    color: white;
+    color: #8dc767;
+    font-weight:bold;
 }
 
 .sidebar a.active span i {

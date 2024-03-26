@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CallApi from '../CallApi';
 import { menuItemClasses } from '@mui/base';
+import { NavLink } from 'react-router-dom';
+
 export default function InvestorMenu({ userLoginBasicInformationDto, UserMenu }) {
     const [invesBalances, setInvesBalances] = useState(() => {
         const storedBalance = localStorage.getItem('invesBalances');
@@ -74,9 +76,11 @@ export default function InvestorMenu({ userLoginBasicInformationDto, UserMenu })
                 {/* <div style={{ top: `${highlightTopPosition}px` }} className={`sidebar__highlight ${startAnimate && 'sidebar__highlight__animate'}`}></div> */}
                 <div className='overflow-container'>
                 {UserMenu.map(menuItem => (
-                    <a key={menuItem.id} className={currCount ===  menuItem.id && 'active'} href={menuItem.link} onClick={() => onClickTab(menuItem.id)}>
-                        <span style={{fontSize: '17px'}} className={currCount === menuItem.id  && 'text-active'}><i key={menuItem.id}></i> {menuItem.name}</span>
-                    </a>
+                    // <a key={menuItem.id} className={currCount ===  menuItem.id && 'active'} href={menuItem.link} onClick={() => onClickTab(menuItem.id)}>
+                    //     <span style={{fontSize: '17px'}} className={currCount === menuItem.id  && 'text-active'}><i key={menuItem.id}></i> {menuItem.name}</span>
+                    // </a>
+                    <NavLink exact activeClassName="active" className={currCount ===  menuItem.id && 'active'} to={menuItem.link}>{menuItem.name}</NavLink>
+
                 ))}
                 </div> 
                 {/* <a className={currCount === 0 && 'active'} href="#home" onClick={() => onClickTab(0)}>
